@@ -8,6 +8,7 @@
 
 body {
     background-image: url(/assets/photos/background2.jpeg);
+    background-color: #ededed;
 }
 
 .wrapper {
@@ -16,7 +17,7 @@ body {
     margin-right: auto;
 }
 
-.header {
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +33,7 @@ h1 {
     letter-spacing: 5px;
 }
 
-.header > p {
+header > p {
     font-size: clamp(16px, 1.2vw, 22px);
     text-align: center;
     padding: 0 0 30px;
@@ -40,7 +41,7 @@ h1 {
     
 }
 
-.header > p:last-child {
+header > p:last-child {
     font-size: clamp(16px, 1.3vw, 22px);
     padding: 0 0 40px;
     font-family: 'cotorisbolduploaded_file';
@@ -51,14 +52,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-.form_col__1 {
-    flex: 0 0 20%;
-    max-width: 20%;
-}
-
 .form_col__2 {
-    flex: 0 0 60%;
-    max-width: 60%;
     width: 100%;
     padding: 0 20px;
 }
@@ -136,16 +130,6 @@ a > p {
 }
 
 @media all and (max-width: 768px) {
-    .form_col__1 {
-        flex: 0 0 7%;
-        max-width: 7%;
-    }
-    
-    .form_col__2 {
-        flex: 0 0 84%;
-        max-width: 84%;
-        padding: 0;
-    }
 
     .item {
         flex-basis: 47%;
