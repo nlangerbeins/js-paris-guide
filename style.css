@@ -1,0 +1,168 @@
+@import url(/assets/fonts/font.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/photos/background2.jpeg);
+}
+
+.wrapper {
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+h1 {
+    font-size: clamp(40px, 4vw, 68px);
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'decondorthin';
+    letter-spacing: 5px;
+}
+
+.header > p {
+    font-size: clamp(16px, 1.2vw, 22px);
+    text-align: center;
+    padding: 0 0 30px;
+    font-family: 'cotorisuploaded_file';
+    
+}
+
+.header > p:last-child {
+    font-size: clamp(16px, 1.3vw, 22px);
+    padding: 0 0 40px;
+    font-family: 'cotorisbolduploaded_file';
+}
+
+.form {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.form_col__1 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.form_col__2 {
+    flex: 0 0 60%;
+    max-width: 60%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.form_input {
+    display: block;
+    width: 100%;
+    line-height: 1.2;
+    border-radius: 0.3em;
+    padding: 5px 14px;
+    font-size: 16px;
+    color: #7a5e02;
+    border: 2px solid #4d4d4d;
+    box-shadow: 1px 1px 6px #585858;
+    outline: none;
+    font-family: 'cotorisuploaded_file';
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.con_col__1 {
+    flex: 0 0 7%;
+    max-width: 7%;
+}
+
+.con_col__2 {
+    flex: 0 0 86%;
+    max-width: 86%;
+}
+
+.con_col__2_block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.item {
+    flex-basis: 24%;
+    padding: 20px;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.45), 0 2px 0px rgba(0,0,0,0.12);
+    margin-bottom: 3%;
+    background-color: white;
+}
+
+.item > p {
+    font-size: clamp(14px, 1.1vw, 18px);
+    font-family: 'cotorisuploaded_file';
+}
+
+img {
+    width: 100%;
+    display: block;
+    
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a > p {
+    font-size: clamp(20px, 1.6vw, 30px);
+    padding: 20px 0 10px;
+    font-family: 'cotorisbolduploaded_file';
+}
+
+@media all and (max-width: 1100px) {
+    .item {
+        flex-basis: 31%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .form_col__1 {
+        flex: 0 0 7%;
+        max-width: 7%;
+    }
+    
+    .form_col__2 {
+        flex: 0 0 84%;
+        max-width: 84%;
+        padding: 0;
+    }
+
+    .item {
+        flex-basis: 47%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .item {
+        flex-basis: 100%;
+        margin-bottom: 7%;
+    }
+
+    .item:last-child {
+        margin-bottom: 10%;
+    }
+
+    .item > p {
+        padding-bottom: 10px;
+    }
+}

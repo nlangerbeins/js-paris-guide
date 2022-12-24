@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'cotorisuploaded_file';
+    src: url('/assets/fonts/cotoris/cotoris-webfont.woff2') format('woff2'),
+         url('cotoris-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cotorisbolduploaded_file';
+    src: url('/assets/fonts/cotorisBold/cotorisbold-webfont.woff2') format('woff2'),
+         url('cotorisbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'decondorthin';
+    src: url('/assets/fonts/DecondorThin/decondorthin-vgeaw-webfont.woff2') format('woff2'),
+         url('decondorthin-vgeaw-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
