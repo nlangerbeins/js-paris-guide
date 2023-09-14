@@ -1,140 +1,138 @@
 @import url(/assets/fonts/font.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url(/assets/photos/background2.jpeg);
-    background-color: #ededed;
+  background-image: url(/assets/photos/background2.jpeg);
+  background-color: #ededed;
 }
 
 .wrapper {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1000px;
 }
 
 h1 {
-    font-size: clamp(40px, 4vw, 68px);
-    padding: 40px 0;
-    text-align: center;
-    font-family: 'decondorthin';
-    letter-spacing: 5px;
+  font-size: clamp(26px, 4vw, 68px);
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'decondorthin';
+  letter-spacing: 5px;
 }
 
 header > p {
-    font-size: clamp(16px, 1.2vw, 22px);
-    text-align: center;
-    padding: 0 0 30px;
-    font-family: 'cotorisuploaded_file';
-    
+  font-size: clamp(16px, 1.2vw, 22px);
+  text-align: center;
+  padding: 0 0 30px;
+  font-family: 'cotorisuploaded_file';
 }
 
 header > p:last-child {
-    font-size: clamp(16px, 1.3vw, 22px);
-    padding: 0 0 40px;
-    font-family: 'cotorisbolduploaded_file';
+  font-size: clamp(16px, 1.3vw, 22px);
+  padding: 0 0 40px;
+  font-family: 'cotorisbolduploaded_file';
 }
 
 form {
-    display: flex;
-    justify-content: center;
-    max-width: 800px;
-    width: 100%;
-    padding: 0 20px 40px;
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px 40px;
 }
 
 .form_input {
-    display: block;
-    width: 100%;
-    border-radius: 0.3em;
-    padding: 15px 15px 10px;
-    font-size: 16px;
-    color: #7a5e02;
-    border: 1px solid #4d4d4d;
-    box-shadow: 1px 1px 4px #585858;
-    outline: none;
-    font-family: 'cotorisuploaded_file';
+  display: block;
+  width: 100%;
+  border-radius: 0.3em;
+  padding: 15px 15px 10px;
+  font-size: 16px;
+  color: #7a5e02;
+  border: 1px solid #4d4d4d;
+  box-shadow: 1px 1px 4px #585858;
+  outline: none;
+  font-family: 'cotorisuploaded_file';
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 15px;
-    justify-content: center;
-    padding: 0 20px;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  justify-content: center;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .item {
-    width: 24%;
-    padding: 15px;
-    box-shadow: 0 7px 10px rgba(0,0,0,0.45), 0 2px 0px rgba(0,0,0,0.12);
-    margin-bottom: 20px;
-    background-color: #fafafa;
+  width: 24%;
+  padding: 15px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.45), 0 2px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  background-color: #fafafa;
 }
 
 .item > p {
-    font-size: clamp(14px, 1.1vw, 18px);
-    font-family: 'cotorisuploaded_file';
+  font-size: clamp(14px, 1.1vw, 18px);
+  font-family: 'cotorisuploaded_file';
 }
 
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 a {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
 
 a > p {
-    font-size: clamp(20px, 1.6vw, 30px);
-    padding: 20px 0 10px;
-    font-family: 'cotorisbolduploaded_file';
+  font-size: clamp(20px, 1.6vw, 30px);
+  padding: 20px 0 10px;
+  font-family: 'cotorisbolduploaded_file';
 }
 
 @media all and (max-width: 1000px) {
-    .item {
-        flex-basis: 30%;
-    }
+  .item {
+    flex-basis: 30%;
+  }
 }
 
 @media all and (max-width: 768px) {
-
-    .item {
-        flex-basis: 47%;
-    }
+  .item {
+    flex-basis: 47%;
+  }
 }
 
 @media all and (max-width: 500px) {
-    .item {
-        flex-basis: 100%;
-        margin-bottom: 7%;
-    }
+  .item {
+    flex-basis: 100%;
+    margin-bottom: 7%;
+  }
 
-    .item:last-child {
-        margin-bottom: 10%;
-    }
+  .item:last-child {
+    margin-bottom: 10%;
+  }
 
-    .item > p {
-        padding-bottom: 10px;
-    }
+  .item > p {
+    padding-bottom: 10px;
+  }
 }
