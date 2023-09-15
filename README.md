@@ -1,6 +1,6 @@
 # Paris Restaurant Guide
 
-![cover](./assets/mockup.png)
+![cover](./assets/img/mockup.png)
 
 ## About
 
